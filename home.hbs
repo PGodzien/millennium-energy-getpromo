@@ -1,0 +1,382 @@
+{{!< default}} <style>
+    .hidden-xs {
+    display: none;
+    }
+
+    /* dummy criterion for demo purposes */
+
+    @media screen and (min-width: 300px) {
+    .hidden-xs {
+    display: block;
+    }
+    }
+    </style>
+    <!-- Hero -->
+    <section class="relative w-full bg-center bg-cover"
+        style="background-image:url('./assets/public/bg-energy.jpg">
+        <div class="absolute inset-0 bg-gradient-to-br from-black to-transparent opacity-80"></div>
+        <div class="mx-auto max-w-7xl">
+            <div class="flex flex-col items-center px-4 md:px-10 py-20 md:pt-40 pb-60 lg:flex-row">
+                <div class="relative w-full max-w-2xl bg-cover lg:w-7/12">
+                    <div class="relative flex flex-col items-center justify-center w-full h-full lg:pr-10">
+                        <div class="flex flex-col items-start space-y-8">
+                            <div class="relative">
+                                <h1
+                                    class="text-5xl md:text-6xl font-serif font-extrabold z-10 leading-tight text-gray-100">
+                                    <span class="relative">
+                                        <svg aria-hidden="true" viewBox="0 0 418 42"
+                                            class="absolute z-0 text-pink-500 top-2/3 left-0 h-[0.58em] w-full"
+                                            preserveAspectRatio="none" fill="#EC4899">
+                                            <path
+                                                d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+                                            </path>
+                                        </svg>
+                                        <span class="relative">Tani prąd </span>
+                                    </span>dla Twojej firmy
+                                </h1>
+                            </div>
+                            <p class="text-xl text-gray-100">W dobie zmian poszukujesz bezpieczeństwa stabilności
+                                kosztów za media
+                                dla Twojego biznesu? Dobrze trafiłeś!</p>
+                            <a href="#more"
+                                class="inline-block  px-7 py-3 text-lg font-serif font-medium tracking-wide text-center border-white text-white transition duration-200 border hover:bg-black hover:text-pink-500 hover:border-black ease">Zobacz
+                                więcej</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="started" class="relative scroll-mt-6 z-10 w-full max-w-2xl mt-20 lg:mt-0 lg:w-5/12">
+                    <div
+                        class="flex flex-col items-start justify-start p-10 bg-black text-gray-300 bg-opacity-75 shadow-2xl">
+                        <h4 class="w-full text-3xl font-bold font-serif">Formularz</h4>
+                        <form id="my-form" class="text-white" action="https://formspree.io/f/xoqrkbeb" method="POST">
+                            <div class="relative mt-6">
+                                <p class="font-medium text-gray-300" placeholder="Podaj swoje imię">Imię*</p>
+                                <input type="text"
+                                    class="block w-full px-4 py-4 mt-2 text-sm placeholder-gray-400 bg-transparent border-none  focus:outline-none focus:ring-0 focus:border-transparent"
+                                    placeholder="Podaj swoje imię" required>
+                                <p class="absolute inset-0 top-auto left-0 h-0.5 bg-gray-500"></p>
+                            </div>
+                            <div class="relative">
+                                <p class="mt-4 mb-1">Email*</p>
+                                <input
+                                    class="block w-full px-4 py-4 mt-2 text-sm placeholder-gray-400 bg-transparent border-none  focus:outline-none focus:ring-0 focus:border-transparent"
+                                    placeholder="Podaj swój adres email" type="email" required>
+                                    <p class="absolute inset-0 top-auto left-0 h-0.5 bg-gray-500"></p>
+                            </div>
+                            <div class="relative">
+                                <p class="mt-4 mb-1">Telefon*</p>
+                                <input
+                                    class="block w-full px-4 py-4 mt-2 text-sm placeholder-gray-400 bg-transparent border-none  focus:outline-none focus:ring-0 focus:border-transparent"
+                                    placeholder="Podaj swój nr telefonu" type="tel" required>
+                                    <p class="absolute inset-0 top-auto left-0 h-0.5 bg-gray-500"></p>
+                            </div>
+                            <p class="mt-4 text-xs text-gray-500"><input type="checkbox" name="terms" required>Wypełniając powyższy
+                                formularz,
+                                wyrażasz zgodę na przetwarzanie danych osobowych przez firmę Filip Kroplewski
+                                Zgody udzielasz
+                                dobrowolnie w celu udzielenia odpowiedzi na Twoje zapytanie. W każdym momencie możesz
+                                wycofać udzieloną
+                                zgodę.</p>
+                            <p id="my-form-status" class="text-lg font-bold text-white mt-3"></p>
+                            <button id="my-form-button" type="submit"
+                                class="inline-block font-serif w-full px-5 py-2 text-lg border border-white font-medium text-center transition duration-200  hover:bg-black hover:border-black hover:text-pink-500 ease mt-6">Bezpłatna konsultacja</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- First Heading -->
+    <section id="more" class="relative pt-36 lg:pb-14 overflow-hidden">
+        <img class="absolute top-0 left-0 opacity-25" src="./assets/public/radial.png"
+            alt="">
+        <div class="relative z-10 container mx-auto max-w-7xl px-4 mb-12">
+            <div class="flex flex-wrap -m-6">
+                <div class="w-full lg:w-1/2 p-6">
+                    <div class="lg:max-w-xl">
+                        <h2 class="mb-6 font-heading font-serif font-bold text-5xl">Zabezpiecz swój biznes przed
+                            rosnącymi cenami
+                            energii elektrycznej
+                            i gazu</h2>
+                        <p class="mb-20 text-base ">Wiemy, że bezpieczeństwo biznesu wynika z stabilności jego kosztów,
+                            dlatego
+                            przygotowujemy z Klientem strategię i wdrażamy rozwiązania zabezpieczające go przed
+                            rosnącymi cenami
+                            energii elektrycznej i gazu.</p>
+                        <ul class="flex flex-wrap w-full -m-3.5">
+                            <li class="p-3.5 flex items-center font-heading font-semibold text-lg ">
+                                <div class="bg-pink-50 mr-3 flex items-center justify-center rounded-full w-6 h-6">
+                                    <svg class="w-5 h-5 " xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-check" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                    </svg>
+                                </div>
+                                <p>Bezpieczeństwo i stabilizacja</p>
+                            </li>
+                            <li class="p-3.5 flex items-center font-heading font-semibold text-lg ">
+                                <div class="bg-pink-50 mr-3 flex items-center justify-center rounded-full w-6 h-6">
+                                    <svg class="w-5 h-5 " xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-check" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                    </svg>
+                                </div>
+                                <p>Minimium formalności</p>
+                            </li>
+                            <li class="p-3.5 flex items-center font-heading font-semibold text-lg ">
+                                <div class="bg-pink-50 mr-3 flex items-center justify-center rounded-full w-6 h-6">
+                                    <svg class="w-5 h-5 " xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-check" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                    </svg>
+                                </div>
+                                <p>Oszczędność</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pl-4 lg:w-1/2 relative lg:absolute lg:bottom-0 lg:right-0">
+            <img class="relative z-10 ml-auto transform hover:-translate-x-28 transition ease-in-out duration-500"
+                src="./assets/public/bg-heading.jpg"
+                alt="">
+            <div class="absolute inset-0 bg-gradient-to-r from-white z-20"></div>
+        </div>
+    </section>
+    <!-- Call To Action -->
+    <section class="bg-white">
+        <div class="px-8 py-8 mx-auto sm:py-10 lg:py-20 max-w-7xl">
+            <div
+                class="relative py-6 overflow-hidden bg-black lg:py-12 md:px-6 lg:p-16 lg:flex lg:items-center lg:justify-between md:shadow-xl md:bg-purple-1000">
+                <img class="absolute top-0 left-0" src="https://shuffle.dev/gradia-assets/elements/features/radial1.svg"
+                    alt="">
+                <div class="relative p-6 rounded-lg md:p-0 md:pb-4">
+                    <h2
+                        class="text-3xl font-serif font-extrabold leading-9 tracking-tight text-white sm:text-4xl sm:leading-10">
+                        Samodzielnie wybierz, ile chcesz płacić za energię</h2>
+                    <p class="w-full mt-5 text-base leading-6 text-pink-100 md:w-3/4">Wybierz sprawdzoną ochronę przed
+                        podwyżkami cen energii i sam decyduj ile płacisz – stałe ceny prądu nawet do 5 lat.</p>
+                </div>
+                <div
+                    class="relative flex flex-col items-center w-full px-6 space-y-5 md:space-x-5 md:space-y-0 md:flex-row md:w-auto lg:flex-shrink-0 md:px-0">
+                    <a href="#started"
+                        class="inline-block px-7 py-3 text-lg font-medium tracking-wide text-center border-white text-white transition duration-200 border hover:bg-black hover:text-pink-500 hover:border-pink-500 font-serif ease">Zaczynamy!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Three step -->
+    <section class="py-20 overflow-hidden">
+        <div class="container px-4 mx-auto">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-wrap items-center justify-center -mx-5">
+                    <div class="w-full lg:w-1/2 px-5 lg:mb-0">
+                        <div class="max-w-md">
+                            <span class="text-lg font-bold text-pink-500">Jak zacząć?</span>
+                            <h2 class="mt-12 mb-10 text-3xl font-serif md:text-5xl font-bold font-heading">Trzy kroki do
+                                oszczędności</h2>
+                            <p class="mb-16 text-base">Rozumiemy jak ważna jest przewidywalność kosztów w Twojej firmie.
+                                Dlatego wdrożyliśmy
+                                rozwiązania, które w kilku krokach pozwolą Ci samodzielnie wybrać sposób kupowania
+                                energii
+                                elektrycznej bez dodatkowych kosztów i w wygodny elektroniczny sposób.</p>
+                            <a href="#started"
+                                class="md:inline-block hidden px-7 py-2 text-lg font-serif font-medium tracking-wide text-center border-black transition duration-200 border hover:bg-black hover:text-pink-500 hover:border-black ease">Zaczynamy!</a>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 px-5">
+                        <ul>
+                            <li class="flex pb-10 mb-8 border-b border-gray-100">
+                                <div class="mr-8">
+                                    <span
+                                        class="flex justify-center items-center w-14 h-14 bg-pink-50 text-lg font-bold rounded-full">1</span>
+                                </div>
+                                <div class="">
+                                    <h3 class="mb-6 text-lg font-bold font-heading font-serif">Przygotuj rachunki za
+                                        prąd</h3>
+                                    <p class=""> Na tej podstawie poznamy Twoją taryfę energetyczną, obecną
+                                        cenę energii i oszacujemy zapotrzebowanie na jej ilość – dzięki temu dowiemy się
+                                        ile
+                                        oszczędzisz wybierając nasze rozwiązania</p>
+                                </div>
+                            </li>
+                            <li class="flex pb-10 mb-8 border-b border-gray-100">
+                                <div class="mr-8">
+                                    <span
+                                        class="flex justify-center items-center w-14 h-14 bg-pink-50 text-lg font-bold rounded-full">2</span>
+                                </div>
+                                <div class="">
+                                    <h3 class="mb-6 text-lg font-bold font-heading font-serif">Oferta szyta na miarę
+                                    </h3>
+                                    <p class="">Po weryfikacji danych otrzymasz konkretną ofertę wraz z warunkami
+                                        współpracy oraz
+                                        szablonem umowy. Od Ciebie zależy czy zdecydujesz się na ofertę Stałej Ceny
+                                        Energii czy też
+                                        na rozliczenia na zasadzie Gracza Giełdowego po aktualnych giełdowych cenach
+                                        energii
+                                        elektrycznej</p>
+                                </div>
+                            </li>
+                            <li class="flex pb-10 border-b border-gray-100">
+                                <div class="mr-8">
+                                    <span
+                                        class="flex justify-center items-center w-14 h-14 bg-pink-50 text-lg font-bold rounded-full">3</span>
+                                </div>
+                                <div class="">
+                                    <h3 class="mb-6 text-lg font-bold font-heading font-serif">Podpisanie umowy</h3>
+                                    <p class="">Podpisujemy umowę w sposób tradycyjny i elektroniczny. Wszelkie
+                                        formalności z
+                                        poprzednim sprzedawcą prądu załatwimy za Ciebie, tak abyś Ty mógł zająć się
+                                        biznesem.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Safety Guarantee -->
+    <section class="relative pt-20 bg-black overflow-hidden">
+        <img class="absolute top-0 right-0" src="https://shuffle.dev/gradia-assets/elements/features/radial1.svg"
+            alt="">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="flex flex-wrap -m-6 mb-12">
+                <div class="w-full p-6">
+                    <h2 class="mb-16 max-w-xl font-heading font-bold text-5xl font-serif text-white">Gwarancja
+                        bezpieczeństwa</h2>
+                    <p class="text-gray-500 max-w-xl mb-16 text-lg">Współpracujemy jako przedstawiciel tylko z
+                        najlepszymi i
+                        najbardziej stabilnymi producentami
+                        energii, aby móc zapewnić swoim Klientom niezmienną wartość oferowanych cen energii
+                        elektrycznej do ich przedsiębiorstwa. Posiadamy rozwiązania dopasowane do poszczególnych grup
+                        taryfowych:</p>
+                    <div class="flex flex-wrap -m-6">
+                        <div class="w-full lg:w-1/2 p-6">
+                            <div class="mb-11 lg:max-w-sm">
+                                <div class="flex flex-wrap -m-4">
+                                    <div class="w-auto p-4">
+                                        <div class="p-px max-w-max bg-pink-500 rounded-full">
+                                            <div
+                                                class="flex justify-center items-center font-heading text-xl bg-gray-900 w-12 h-12 text-white rounded-full">
+                                                A</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1 p-4">
+                                        <h3 class="mb-4 font-heading font-medium text-xl text-white font-serif">Taryfa A
+                                        </h3>
+                                        <p class="text-gray-400"><b>Wysokie napięcie.</b> Taryfa adresowana do
+                                            największych odbiorców jak fabryki czy kopalnie.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-11 lg:max-w-sm">
+                                <div class="flex flex-wrap -m-4">
+                                    <div class="w-auto p-4">
+                                        <div class="p-px max-w-max bg-pink-500 rounded-full">
+                                            <div
+                                                class="flex justify-center items-center font-heading text-xl bg-gray-900 w-12 h-12 text-white rounded-full">
+                                                B</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1 p-4">
+                                        <h3 class="mb-4 font-heading font-medium text-xl text-white font-serif">Taryfa B
+                                        </h3>
+                                        <p class="text-gray-400"><b>Średnie napięcie.</b> Taryfa adresowana do dużych
+                                            firm i przedsiębiorstw.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-11 lg:max-w-sm">
+                                <div class="flex flex-wrap -m-4">
+                                    <div class="w-auto p-4">
+                                        <div class="p-px max-w-max bg-pink-500 rounded-full">
+                                            <div
+                                                class="flex justify-center items-center font-heading text-xl bg-gray-900 w-12 h-12 text-white rounded-full">
+                                                C</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1 p-4">
+                                        <h3 class="mb-4 font-heading font-medium text-xl text-white font-serif">Taryfa C
+                                        </h3>
+                                        <p class="mb-11 text-gray-400"><b>Niskie napięcie.</b> Taryfa adresowana do
+                                            małych i średnich przedsiębiorstw.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pl-4 lg:absolute lg:bottom-0 lg:right-0 lg:w-1/2">
+            <div class="relative max-w-max ml-auto">
+                <img class="relative z-10 ml-auto"
+                    src="./assets/public/bg-footer.jpeg"
+                    alt="">
+                <div class="absolute inset-0 bg-gradient-to-r from-black z-20"></div>
+            </div>
+        </div>
+    </section>
+    <script async>
+        window.addEventListener("load", function () {
+            const bgv = document.getElementById("bgvid");
+
+            // what jQuery checks under the hood
+            const visible = bgv.offsetWidth ||
+                bgv.offsetHeight ||
+                bgv.getClientRects().length;
+
+            if (visible) {
+                const children = bgv.getElementsByTagName("source");
+
+                for (let i = 0; i < children.length; ++i) {
+                    children[i].src = children[i].dataset.src;
+                }
+            }
+
+            bgv.load();
+        });
+    </script>
+    <script>
+        var form = document.getElementById("my-form");
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Dziękujemy za Twoje zgłoszenie! Wkrótce się z Tobą skontaktujemy 👋";
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Oops! Coś poszło nie tak z wysyłką tej wiadomości."
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! Pojawił się problem z wysłaniem wiadomości."
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("cta").style.display =
+                "none";
+        }
+    </script>
