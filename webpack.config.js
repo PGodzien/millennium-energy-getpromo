@@ -65,7 +65,7 @@ let webpackConfig = {
             {
                 host: "localhost",
                 port: 3005,
-                proxy: "http://localhost:2369",
+                proxy: "http://localhost:2371",
                 files: [
                     {
                         match: ["**/*.hbs", "./src/*.*"],
