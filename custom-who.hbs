@@ -1,233 +1,411 @@
-{{!< default}} {{#post}} <section id="more" class="relative overflow-hidden bg-black bg-center bg-cover py-36 lg:pb-14"
-    style="background-image: url({{feature_image}});">
-    <img class="absolute top-0 right-0" src="/assets/public/radial-safety.svg" alt="" />
-    <div class="absolute inset-0 bg-gradient-to-r from-black"></div>
+{{!< default}}
+{{#post}}
+    <section
+        id="more"
+        class="relative pt-16 overflow-hidden bg-black bg-center bg-cover md:pt-36"
+        style="background-image: url({{feature_image}});"
+    >
+        <img
+            class="absolute top-0 right-0"
+            src="/assets/public/radial-safety.svg"
+            alt=""
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-black"></div>
 
-    <div class="container relative z-20 px-4 mx-auto mb-12 max-w-7xl">
-        <div class="flex flex-wrap -m-6">
-            <div class="w-full p-6 lg:w-1/2">
-                <div class="lg:max-w-xl">
-                    <h2 class="mb-6 font-serif text-5xl font-bold text-white font-heading">{{title}}</h2>
-                    {{#if custom_excerpt}}
-                    <p class="mb-20 text-base text-white">{{custom_excerpt}}</p>
-                    {{/if}}
+        <div class="container relative z-20 px-4 mx-auto mb-12 max-w-7xl">
+            <div class="flex flex-wrap -m-6">
+                <div class="w-full p-6 lg:w-1/2">
+                    <div class="lg:max-w-xl">
+                        <h2
+                            class="mb-6 font-serif text-5xl font-bold text-white font-heading"
+                        >{{title}}</h2>
+                        {{#if custom_excerpt}}
+                            <p
+                                class="mb-20 text-base text-white"
+                            >{{custom_excerpt}}</p>
+                        {{/if}}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
-    {{!-- FOR WHOM --}}
+    {{! FOR WHOM }}
     <section class="py-16">
         <div class="items-center max-w-6xl px-12 mx-auto sm:px-20 md:px-5">
             <div class="flex flex-wrap items-center -mx-3">
                 <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
                     <div class="w-full max-w-md xl:max-w-xl">
-                        <h2 class="relative mb-6 text-4xl font-semibold font-serif leading-tight tracking-tight">
+                        <h2
+                            class="relative mb-6 font-serif text-4xl font-semibold leading-tight tracking-tight"
+                        >
                             Kto może skorzystać z oferty?
                         </h2>
                         <ul>
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Zakłady produkcyjne</span>
+                                <span class="font-medium text-gray-700">Zakłady
+                                    produkcyjne</span>
                             </li>
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Stolarnie i tartaki</span>
+                                <span
+                                    class="font-medium text-gray-700"
+                                >Stolarnie i tartaki</span>
                             </li>
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Rolnicy i producenci żywności</span>
+                                <span class="font-medium text-gray-700">Rolnicy
+                                    i producenci żywności</span>
                             </li>
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Galerie handlowe</span>
+                                <span class="font-medium text-gray-700">Galerie
+                                    handlowe</span>
                             </li>
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Sklepy i supermarkety</span>
+                                <span class="font-medium text-gray-700">Sklepy i
+                                    supermarkety</span>
                             </li>
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Magazyny</span>
+                                <span
+                                    class="font-medium text-gray-700"
+                                >Magazyny</span>
                             </li>
 
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Warsztaty</span>
+                                <span
+                                    class="font-medium text-gray-700"
+                                >Warsztaty</span>
                             </li>
 
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Chłodnie</span>
+                                <span
+                                    class="font-medium text-gray-700"
+                                >Chłodnie</span>
                             </li>
 
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Biurowce i budynki</span>
+                                <span class="font-medium text-gray-700">Biurowce
+                                    i budynki</span>
                             </li>
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Deweloperzy</span>
+                                <span
+                                    class="font-medium text-gray-700"
+                                >Deweloperzy</span>
                             </li>
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Spółdzielnie i wspólnoty mieszkaniowe</span>
+                                <span
+                                    class="font-medium text-gray-700"
+                                >Spółdzielnie i wspólnoty mieszkaniowe</span>
                             </li>
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Szkoły i placówki oświatowe</span>
+                                <span class="font-medium text-gray-700">Szkoły i
+                                    placówki oświatowe</span>
                             </li>
-                            <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <div class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
+                            <li
+                                class="flex items-center py-2 space-x-4 xl:py-3"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-pink-50"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        class="bi bi-check"
+                                        viewBox="0 0 16 16"
+                                    >
                                         <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        >
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-medium text-gray-700">Kada firma zużywająca prąd</span>
+                                <span class="font-medium text-gray-700">Kada
+                                    firma zużywająca prąd</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="relative w-full px-3 mb-12 lg:-ml-20 lg:w-1/2 order-0 lg:order-1 lg:mb-0">
-                    <img class="absolute top-0 right-0 z-10 hidden mx-auto -mt-32 rounded-lg shadow-2xl opacity-100 xl:-mr-12 sm:max-w-xs lg:max-w-sm lg:block"
-                        src="/assets/public/factory.jpg">
-                    <img class="relative z-20 w-full mx-auto mt-3 rounded-lg shadow-2xl sm:max-w-none lg:-ml-10 lg:max-w-sm"
-                        src="/assets/public/kitchen.jpg" alt="feature image">
-                    <img class="absolute bottom-0 right-0 z-10 hidden mx-auto -mb-48 rounded-lg shadow-2xl xl:-mr-12 sm:max-w-xs lg:max-w-sm lg:block"
-                        src="/assets/public/garrage.jpg">
+                <div
+                    class="relative w-full px-3 mb-12 lg:-ml-20 lg:w-1/2 order-0 lg:order-1 lg:mb-0"
+                >
+                    <img
+                        class="absolute top-0 right-0 z-10 hidden mx-auto -mt-32 rounded-lg shadow-2xl opacity-100 xl:-mr-12 sm:max-w-xs lg:max-w-sm lg:block"
+                        src="/assets/public/factory.jpg"
+                    />
+                    <img
+                        class="relative z-20 w-full mx-auto mt-3 rounded-lg shadow-2xl sm:max-w-none lg:-ml-10 lg:max-w-sm"
+                        src="/assets/public/kitchen.jpg"
+                        alt="feature image"
+                    />
+                    <img
+                        class="absolute bottom-0 right-0 z-10 hidden mx-auto -mb-48 rounded-lg shadow-2xl xl:-mr-12 sm:max-w-xs lg:max-w-sm lg:block"
+                        src="/assets/public/garrage.jpg"
+                    />
                 </div>
             </div>
         </div>
     </section>
     <!-- Call To Action -->
-<section class="bg-white">
-    <div class="px-8 py-8 mx-auto sm:py-10 lg:py-20 max-w-7xl">
-        <div
-            class="relative py-6 overflow-hidden bg-black lg:py-12 md:px-6 lg:p-16 lg:flex lg:items-center lg:justify-between md:shadow-xl md:bg-purple-1000"
-        >
-            <img
-                class="absolute top-0 left-0"
-                src="/assets/public/radial-safety.svg"
-                alt=""
-            />
-            <div class="relative p-6 rounded-lg md:p-0 md:pb-4">
-                <h2
-                    class="font-serif text-3xl font-extrabold leading-9 tracking-tight text-white sm:text-4xl sm:leading-10"
-                >
-                    Samodzielnie wybierz, ile chcesz płacić za energię</h2>
-                <p
-                    class="w-full mt-5 text-base leading-6 text-pink-100 md:w-3/4"
-                >Wybierz sprawdzoną ochronę przed podwyżkami cen energii i sam
-                    decyduj ile płacisz – stałe ceny prądu nawet do 5 lat.</p>
-            </div>
+    <section class="bg-white">
+        <div class="px-8 py-8 mx-auto sm:py-10 lg:py-20 max-w-7xl">
             <div
-                class="relative flex flex-col items-center w-full px-6 space-y-5 md:space-x-5 md:space-y-0 md:flex-row md:w-auto lg:flex-shrink-0 md:px-0"
+                class="relative py-6 overflow-hidden bg-black lg:py-12 md:px-6 lg:p-16 lg:flex lg:items-center lg:justify-between md:shadow-xl md:bg-purple-1000"
             >
-                <a
-                    href="/kontakt/"
-                    class="inline-block py-3 font-serif text-lg font-medium tracking-wide text-center text-white transition duration-200 border border-white px-7 hover:bg-black hover:text-pink-500 hover:border-pink-500 ease"
-                >Zaczynamy!</a>
+                <img
+                    class="absolute top-0 left-0"
+                    src="/assets/public/radial-safety.svg"
+                    alt=""
+                />
+                <div class="relative p-6 rounded-lg md:p-0 md:pb-4">
+                    <h2
+                        class="font-serif text-3xl font-extrabold leading-9 tracking-tight text-white sm:text-4xl sm:leading-10"
+                    >
+                        Samodzielnie wybierz, ile chcesz płacić za energię</h2>
+                    <p
+                        class="w-full mt-5 text-base leading-6 text-pink-100 md:w-3/4"
+                    >Wybierz sprawdzoną ochronę przed podwyżkami cen energii i
+                        sam decyduj ile płacisz – stałe ceny prądu nawet do 5
+                        lat.</p>
+                </div>
+                <div
+                    class="relative flex flex-col items-center w-full px-6 space-y-5 md:space-x-5 md:space-y-0 md:flex-row md:w-auto lg:flex-shrink-0 md:px-0"
+                >
+                    <a
+                        href="/kontakt/"
+                        class="inline-block py-3 font-serif text-lg font-medium tracking-wide text-center text-white transition duration-200 border border-white px-7 hover:bg-black hover:text-pink-500 hover:border-pink-500 ease"
+                    >Zaczynamy!</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-    {{!-- CONTENT --}}
+    </section>
+    {{! CONTENT }}
     <section class="py-16 relative bg-white background-position: center top;">
-        <img class="absolute top-0 left-0 z-10 opacity-25" src="https://millennium-energy.pl/assets/public/radial.png"
-            alt="" />
+        <img
+            class="absolute top-0 left-0 z-10 opacity-25"
+            src="https://millennium-energy.pl/assets/public/radial.png"
+            alt=""
+        />
         <div class="mx-auto">
             <div
-                class="relative z-20 px-4 mx-auto mb-8 text-lg font-medium leading-loose prose text-gray-500 md:max-w-5xl md:text-xl">
+                class="relative z-20 px-4 mx-auto mb-8 text-lg font-medium leading-loose prose text-gray-500 md:max-w-5xl md:text-xl"
+            >
                 {{content}}
             </div>
         </div>
     </section>
 
-    {{/post}}
+{{/post}}
